@@ -1,9 +1,9 @@
-Options +FollowSymlinks #para que funcionen todos los links con url amigables
-RewriteEngine On     #Activa las lineas de código
+#Options +FollowSymlinks #para que funcionen todos los links con url amigables
+#RewriteEngine On     #Activa las lineas de código
 
-RewriteBase /poo basico/Mexflix # se define la ruta donde esta el proyecto omitiendo localhost y se escribe a partir de htdocs se  invierten los '\' por '/''
+#RewriteBase /poo basico/Mexflix # se define la ruta donde esta el proyecto omitiendo localhost y se escribe a partir de htdocs se  #invierten los '\' por '/''
 
-RewriteCond %{SCRIPT_FILENAME} !-d # si existen directorios con este nombre de directorio accede a carpeta
-RewriteCond %{SCRIPT_FILENAME} !-f  # si existen FILES con este nombre de  accede a FILE
+#RewriteCond %{SCRIPT_FILENAME} !-d # si existen directorios con este nombre de directorio accede a carpeta
+#RewriteCond %{SCRIPT_FILENAME} !-f  # si existen FILES con este nombre de  accede a FILE
 
-Rewrite ^(.*)$ index.php?r=$1 [L] #convierte las url's en amigables
+#Rewrite ^(.*)$ index.php?r=$1 [L] #convierte las url's en amigables
